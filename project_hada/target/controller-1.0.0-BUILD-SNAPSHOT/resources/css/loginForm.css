@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 500px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    padding: 50px 70px 0px;
+    margin: 100px auto;
+}
+
+.logo {
+    margin: 20px auto;
+    width: 125px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color : black;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #FF7575;
+}
+
+.remember {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.login-inp
+, .login-btn{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-inp {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.login-btn {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.con > * {
+    margin: 10px;
+}
+
+.con > span {
+    color: rgb(202, 202, 202);
+    font-size: 20px;
+}
+
+.con {
+    margin: 20px;
+    text-align: center;
+}
+
+.con2 {
+    border-top: 1px solid rgb(202, 202, 202);
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.sign-up {
+    color: #3153ff;
+    font-weight: bold;
+}
+
+#msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
