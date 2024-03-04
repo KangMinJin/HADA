@@ -3,7 +3,7 @@ package com.hada.model;
 import java.sql.Timestamp;
 import java.util.Objects;
 
-public class UserVO {
+public class User {
 	private Long userNo;
     private String userId;
     private String userMail;
@@ -15,9 +15,9 @@ public class UserVO {
     private Timestamp delDate;
     private char status;
 
-    public UserVO(){}
+    public User(){}
     
-    public UserVO(String userId, String userPwd, String userMail, String userName) {
+    public User(String userId, String userPwd, String userMail, String userName) {
 	    this.userId = userId;
 	    this.userPwd = userPwd;
 	    this.userMail = userMail;
@@ -28,7 +28,7 @@ public class UserVO {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        UserVO user = (UserVO) o;
+        User user = (User) o;
         return Objects.equals(userNo, user.userNo) && Objects.equals(userId, user.userId) && Objects.equals(userPwd, user.userPwd) && Objects.equals(userMail, user.userMail) && Objects.equals(userName, user.userName);
     }
 

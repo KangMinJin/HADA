@@ -1,9 +1,13 @@
 package com.hada.mapper;
 
-import com.hada.model.UserVO;
+import com.hada.model.User;
 
 public interface UserMapper {
-	public void insertUser(UserVO user);
+	public void insertUser(User user);
 
-	public UserVO selectUser(String userId);
+	public User userLogin(String userId);
+
+	public int idCheck(String userId);
+
+	public int mailCheck(String userMail);
 }

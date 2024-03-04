@@ -21,6 +21,7 @@
 	<!-- MyBatis 추가 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="datasource"></property>
+		<property name="configLocation"  value="classpath:mybatis-config.xml"/>
 	</bean>
 	
 	<!-- mapper 추가 -->

@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias alias="User" type="com.hada.domain.User"/>
+        <typeAlias type="com.hada.model.User" alias="User"/>
     </typeAliases>
 </configuration>
