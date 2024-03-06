@@ -5,6 +5,7 @@
 <head>
     <title>HADA.-회원가입</title>
     <link rel="stylesheet" href="../resources/css/joinForm.css">
+    <script src="../resources/js/join.js"></script>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
@@ -37,6 +38,5 @@
         <a href="<c:url value='/user/login'/>">계정이 있으신가요? <span class="login">로그인</span></a>
     </div>
 </div>
-<script src="../resources/js/join.js"></script>
 </body>
 </html>

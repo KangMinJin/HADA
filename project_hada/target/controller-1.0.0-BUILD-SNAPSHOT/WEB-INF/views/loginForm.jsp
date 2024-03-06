@@ -20,9 +20,8 @@
             <input type="hidden" name="toURL" value="${param.toURL}">
             <label class="remember"><input type="checkbox" name="rememberUserId" value="on" ${empty cookie.userId.value ? "":"checked"}> 아이디 기억</label>
             <div id="msg">
-                <c:if test="${not empty param.msg}">
-                    <i class="fa fa-exclamation-circle"> ${URLDecoder.decode(param.msg)}</i>
-                </c:if>
+                <c:if test="${result == 0}">사용자 아이디 또는 비밀번호가 일치하지 않습니다.</c:if>
+                <c:if test="${result == 1}">정지된 아이디입니다. 운영자에게 문의하세요.</c:if>
             </div>
             <button class="login-btn">로그인</button>
             <div class="con">

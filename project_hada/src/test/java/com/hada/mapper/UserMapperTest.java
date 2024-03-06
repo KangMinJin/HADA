@@ -53,8 +53,9 @@ public class UserMapperTest {
 
 	@Test
 	public void userLogin() throws Exception {
-		String userId = "azx";
-//		User user = userMapper.userLogin(userId);
-		System.out.println("result = " + userMapper.userLogin(userId));
+		String userId = "aaaaa";
+		User user = userMapper.userLogin(userId);
+		System.out.println("result = " + user);
+		System.out.println(user.getStatus() == '1');
 	}
 }
